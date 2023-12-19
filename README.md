@@ -1,8 +1,12 @@
-# 2023-ML-EXP
+# Learn Machine Learning
 
-Repo to study Machine Learning, thoroughly...
+Repo to learn Machine Learning thoroughly
 
-Main reference: 
-d2l
-机器学习——周志华
+Requied some basic knowledge of Linear Algebra, Probability Theory, and Calculus.
+
+## Reference
+
+[1] [Dive into Deep Learning](https://d2l.ai/)
+
+[2] [Machine Learning](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/MLbook2016.htm)
 

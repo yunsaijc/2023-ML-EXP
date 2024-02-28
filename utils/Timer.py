@@ -1,6 +1,5 @@
 """
 First used in 3.1.2 in <d2l>
-With some modifications
 """
 
 import time

@@ -1,8 +1,9 @@
 import random
 
 import torch
+from d2l import torch as d2l
 
-def synthetic_data(w, b, num_examples):
+def synthetic_data(w, b, num_examples): #@save
     """Generate y = Xw + b + noise."""
     X = torch.normal(0, 1, (num_examples, len(w))) # torch.normal(mean, std, size)
     y = torch.matmul(X, w) + b
@@ -24,15 +25,15 @@ def init_params():
     b = torch.zeros(1, requires_grad=True)
     return w, b
 
-def linreg(X, w, b):
+def linreg(X, w, b):    #@save
     """The linear regression model."""
     return torch.matmul(X, w) + b
 
-def squared_loss(y_hat, y):
+def squared_loss(y_hat, y): #@save
     """Squared loss."""
     return (y_hat - y.reshape(y_hat.shape))**2 / 2
 
-def sgd(params, lr, batch_size):
+def sgd(params, lr, batch_size):    #@save
     """Minibatch stochastic gradient descent."""
     # 禁用自动梯度计算以提高计算效率. 在计算loss时已经计算了梯度, 这里不需要再计算
     with torch.no_grad():
